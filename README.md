@@ -9,7 +9,6 @@ The architecture is as follows in the diagram below and you need minimal 5 serve
 Copy `inventory/servers.ini.sample` to `inventory/servers.ini`
 
 ```bash
-cd deployment
 cp inventory/servers.ini.sample inventory/servers.ini
 ```
 
@@ -41,7 +40,6 @@ If you want to deploy HA postgres cluster, you can use this repository: https://
 Just run
 
 ```bash
-cd deployment
 ansible-playbook -i inventory/servers.ini vault_pgsql.yml --become --become-method=sudo
 ```
 
@@ -89,7 +87,6 @@ Change `use_keepalived` to `false` in `inventory/group_vars/all.yml` and run
 Just run
 
 ```bash
-cd deployment
 ansible-playbook -i inventory/servers.ini vault_pgsql.yml --become --become-method=sudo
 ```
 
@@ -122,4 +119,4 @@ TODO:
 
 - [ ] Test on Debian 12
 - [ ] Write playbook for Rocky Linux 9
-- [ ] Write playbook for mariadb database 
+- [ ] Write playbook for mariadb database
