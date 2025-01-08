@@ -122,4 +122,4 @@ TODO:
 
 - [ ] Test on Debian 12
 - [ ] Write playbook for Rocky Linux 9
-- [ ] Write playbook for mariadb database
+- [ ] Write playbook for mariadb database 
